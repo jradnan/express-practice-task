@@ -27,6 +27,7 @@ const Users = () => {
                 {
                     loadedData.map(data => <p key={data._id}>name:{data.name} <br></br> email:{data.email}
                         <button onClick={() => deleteUser(data._id)}>X</button>
+                       <Link to={`/user/${data._id}`}><button>Details</button></Link>
                     </p>
 
                     )
